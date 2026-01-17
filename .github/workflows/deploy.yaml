@@ -23,7 +23,7 @@ jobs:
       - name: Deploy files to EC2
         run: |
           rsync -avz --delete index.html \
-          ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }}:/var/www/ci-cd.dice14.online/
+          ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }}:/var/www/ci-cd.dice13.online/
 
       - name: Reload Nginx
         run: |
